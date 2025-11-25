@@ -13,7 +13,8 @@ export default function Home() {
         <div className="home-overlay">
           <h1 className="home-title">Welcome to my ecommerce</h1>
           <p className="home-descripcion">
-            Descubrí productos de calidad seleccionados especialmente para vos.
+            
+Discover quality products selected especially for you.
           </p>
         </div>
       </div>
