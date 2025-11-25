@@ -158,3 +158,56 @@
   align-items: center;
   gap: 0.5rem;
 }
+
+/* ============================================================
+   📱 MOBILE — max-width: 600px
+   Botones más chicos, compactos y alineados
+============================================================ */
+@media (max-width: 600px) {
+
+  /* ----- BOTÓN BASE ----- */
+  .btn {
+    padding: 0.5rem 0.9rem;   /* antes 0.65rem 1.2rem */
+    font-size: 0.85rem;       /* antes 1rem */
+    border-radius: 0.4rem;
+    gap: 4px;
+  }
+
+  /* ----- BOTÓN RETURN, ADD, EDIT, DELETE ----- */
+  .btn-add,
+  .btn-edit,
+  .btn-delete,
+  .btn-return,
+  .btn-cart {
+    width: 100%;              /* más cómodos en mobile */
+    max-width: 240px;
+    margin: 0 auto;
+  }
+
+  /* ----- CONTADOR (+ y −) ----- */
+  .btn-count {
+    width: 32px;              /* antes 40px */
+    height: 32px;             /* más compacto */
+    font-size: 1rem;          /* antes 1.2rem */
+    border-radius: 5px;
+  }
+
+  /* Texto del contador */
+  .count-value {
+    min-width: 24px;          /* antes 30px */
+    font-size: 1rem;          /* antes 1.2rem */
+  }
+
+  /* Contenedor del contador */
+  .count-btns {
+    gap: 0.3rem;              /* antes 0.5rem */
+  }
+
+  /* ----- Botones dentro del carrito ----- */
+  .cart-info button {
+    width: 100%;
+    max-width: 220px;
+    font-size: 0.85rem;
+    padding: 0.55rem 0.8rem;
+  }
+}

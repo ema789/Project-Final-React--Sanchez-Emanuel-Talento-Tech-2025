@@ -94,12 +94,50 @@
    RESPONSIVE
 ================================ */
 
-@media (min-width: 600px) {
-  .home-title { font-size: 2.6rem; }
-  .home-descripcion { font-size: 1.25rem; }
+/* ================================
+   📱 MOBILE AJUSTADO
+================================ */
+@media (max-width: 600px) {
+
+  /* Hero más chico */
+  .home-hero {
+    background-image: url("img/Fondo2.jpg");
+    height: 55vh; /* antes 90vh → lo achicamos */
+    background-attachment: scroll; /* fixed rompe en mobile */
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* Overlay centrado pero con padding reducido */
+  .home-overlay {
+    padding: 0.5rem;
+  }
+
+  /* Título más chico */
+  .home-title {
+    font-size: 1.4rem; /* antes 2rem */
+    line-height: 1.2;
+  }
+
+  /* Descripción más chica */
+  .home-descripcion {
+    font-size: 0.9rem; /* antes 1.1rem */
+    margin-top: 0.4rem;
+  }
+
+  /* Sección productos */
+  .product-content {
+    padding: 1.2rem 0.8rem;
+  }
+
+  .product-title {
+    font-size: 1.4rem; /* antes 1.8rem */
+  }
+
+  /* Por si hay grids, que se acomoden */
+  .grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+  }
 }
 
-@media (min-width: 1024px) {
-  .home-title { font-size: 3rem; }
-  .product-title { font-size: 2.2rem; }
-}

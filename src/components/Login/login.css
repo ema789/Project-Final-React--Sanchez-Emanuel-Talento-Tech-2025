@@ -169,3 +169,79 @@
   .login-title { font-size: 1.6rem; }
   .login-sub { font-size: 1rem; }
 }
+
+@media (max-width: 600px) {
+
+  /* ======= CONTAINER ======= */
+  .login-container {
+    padding: 1rem 0.5rem; /* antes 2rem 1rem */
+  }
+
+  /* ======= CARD ======= */
+  .login-card {
+    max-width: 90%;       /* ocupa casi todo el ancho del móvil */
+    padding: 1rem;        /* antes 1.4rem */
+    border-radius: 0.8rem; 
+  }
+
+  /* ======= HEADER ======= */
+  .login-title {
+    font-size: 1.1rem;    /* antes 1.25rem */
+  }
+
+  .login-sub {
+    font-size: 0.85rem;   /* antes 0.92rem */
+    margin-top: 0.3rem;
+  }
+
+  /* ======= ERROR ======= */
+  .login-error {
+    font-size: 0.85rem;
+    padding: 0.5rem 0.7rem;
+    margin-bottom: 0.6rem;
+  }
+
+  /* ======= INPUTS ======= */
+  .input-group {
+    gap: 0.4rem;          /* reduce espacio entre iconos y input */
+    padding: 0.35rem 0.5rem;
+    border-radius: 8px;
+    margin-bottom: 0.7rem;
+  }
+
+  .input-group input {
+    font-size: 0.9rem;    /* antes 1rem */
+    padding: 0.45rem 0.2rem;
+  }
+
+  .input-icon {
+    font-size: 1rem;      /* antes 1.1rem */
+    width: 24px;
+  }
+
+  .pwd-toggle {
+    font-size: 1rem;
+    padding: 4px;
+  }
+
+  /* ======= FOOTER ======= */
+  .login-foot {
+    font-size: 0.85rem;
+    gap: 0.5rem;
+  }
+
+  .remember input {
+    width: 14px;
+    height: 14px;
+  }
+
+  .forgot-link {
+    font-size: 0.85rem;
+    padding: 0.15rem 0.3rem;
+  }
+
+  /* ======= ACTIONS ======= */
+  .form-actions {
+    margin-top: 0.5rem;
+  }
+}

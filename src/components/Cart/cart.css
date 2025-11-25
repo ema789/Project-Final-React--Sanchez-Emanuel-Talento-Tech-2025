@@ -121,18 +121,80 @@
    📱 RESPONSIVE
 ================================*/
 @media (max-width: 600px) {
+
+  /* --- CONTENEDOR PRINCIPAL --- */
+  .cart-container {
+    padding: 1rem 0.5rem; /* antes 2rem → muy grande */
+  }
+
+  .cart-content {
+    padding: 1.2rem; /* reduce espacio interno */
+    border-radius: 0.8rem;
+  }
+
+  .cart-subtitle {
+    font-size: 1.4rem; /* antes 1.8rem */
+    margin-bottom: 1rem;
+  }
+
+  /* --- ITEM DEL CARRITO --- */
   .cart-item {
     flex-direction: column;
     align-items: center;
+    gap: 0.8rem;
+    padding: 0.8rem 0.5rem;
     text-align: center;
   }
 
+  /* Imagen más chica para mobile */
   .cart-img {
-    width: 120px;
-    height: 120px;
+    width: 90px;    /* antes 120px → era demasiado */
+    height: 90px;
+    border-radius: 0.5rem;
+  }
+
+  /* Información más compacta */
+  .cart-name {
+    font-size: 1rem; /* antes 1.2rem */
+  }
+
+  .cart-price,
+  .cart-count,
+  .cart-total-count {
+    font-size: 0.85rem; /* antes 0.95rem */
+  }
+
+  .cart-info button {
+    width: 100%; /* se adapta al ancho del mobile */
+    max-width: 200px;
+    margin: 0.3rem auto;
+  }
+
+  /* --- TOTAL Y BOTONES --- */
+  .cart-total {
+    text-align: center; /* en mobile queda mejor */
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
   }
 
   .cart-buttons {
     flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .cart-buttons button {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 0.95rem;
+  }
+
+  /* --- CARRITO VACÍO --- */
+  .cart-warning {
+    font-size: 1rem;
+  }
+
+  .btn-return {
+    width: 100%;
+    justify-content: center;
   }
 }

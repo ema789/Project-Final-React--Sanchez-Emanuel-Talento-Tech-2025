@@ -106,6 +106,63 @@
   }
 }
 
+@media (max-width: 600px) {
+
+  /* === WRAPPER PRINCIPAL === */
+  .dashboard-wrapper {
+    padding: 1rem 0.5rem; /* reduce el padding general */
+    min-height: calc(100vh - 60px);
+  }
+
+  /* === CAJA INTERNA === */
+  .dashboard-container {
+    padding: 1.5rem;       /* antes 2.2rem */
+    max-width: 90%;        /* ocupa casi todo el ancho */
+    margin-top: 0.8rem;
+    border-radius: 0.8rem;
+  }
+
+  /* === TITULOS === */
+  .dashboard-title {
+    font-size: 1.5rem;     /* antes 2rem */
+    margin-bottom: 0.8rem;
+  }
+
+  .dashboard-subtitle {
+    font-size: 1rem;       /* antes 1.2-1.4rem */
+    margin-bottom: 0.8rem;
+  }
+
+  .dashboard-welcome {
+    font-size: 0.9rem;     /* antes 1.1rem */
+    margin-bottom: 1.2rem;
+  }
+
+  /* === MENSAJES DE ESTADO === */
+  .dashboard-loading,
+  .error {
+    font-size: 0.9rem;     /* reduce tamaño de mensajes */
+    margin-top: 0.6rem;
+  }
+
+  /* === SOLO ADMIN === */
+  .admin-container {
+    margin-bottom: 1.2rem;
+  }
+
+  /* BOTONES */
+  .btn-delete,
+  .btn-add,
+  .btn-edit,
+  .btn-return,
+  .btn-cart {
+    width: 100%;           /* se adaptan al ancho de mobile */
+    max-width: 220px;
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+  }
+}
+
 /* === Tablets grandes / iPad (>= 768px) === */
 @media (min-width: 768px) {
   .dashboard-wrapper {

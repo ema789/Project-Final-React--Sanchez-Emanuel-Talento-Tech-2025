@@ -151,22 +151,68 @@
 /* ============================================================
    📟 TABLET — 600px
 ============================================================ */
-@media (min-width: 600px) {
+@media (max-width: 600px) {
 
+  /* Grilla más compacta */
+  .products-container {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1rem;
+    padding: 0.8rem;
+  }
+
+  /* Card más pequeña */
+  .product-card {
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+  }
+
+  /* Imagen reducida (para que no quede gigante) */
   .product--content__img {
-    height: 240px;
+    height: 160px;   /* 🔥 antes 220px → baja tamaño */
   }
 
+  .product-img {
+    object-fit: cover;
+  }
+
+  /* Texto más equilibrado */
+  .productCard-name {
+    font-size: 0.95rem;
+  }
+
+  .productCard-price {
+    font-size: 1rem;
+  }
+
+  .productCard-descripction {
+    font-size: 0.8rem;
+  }
+
+  .card-info {
+    padding: 0.7rem;
+  }
+
+  /* Botones más chicos */
   .btn-client {
-    flex-direction: row; /* 🔥 se alinean en fila */
-    justify-content: center;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 0.6rem 0;
   }
 
-  .product-card.detail .product-img {
-    height: 420px;
+  .btns-content {
+    gap: 0.6rem;
+  }
+
+  /* Detalle del producto en mobile */
+  .detail-mode {
+    padding: 2rem 1rem;
+  }
+
+  .detail .product-img {
+    height: 280px;  /* 🔥 antes 380px → mejor en mobile */
+    object-fit: contain;
   }
 }
-
 
 /* ============================================================
    🖥 DESKTOP — 900px
