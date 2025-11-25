@@ -1,0 +1,105 @@
+/* ================================
+   HOME BASE
+================================ */
+.home-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* ================================
+   HERO CON PARALLAX REAL
+================================ */
+.home-hero {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  background-image: url("/img/Fondo1.jpg"); /* usa esta ruta */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* PARALLAX */
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Overlay mega transparente */
+.home-dark-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25); /* Más visible */
+  backdrop-filter: blur(2px);
+  z-index: 1;
+}
+
+/* Contenido centrado */
+.home-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  color: #fff;
+}
+
+/* Título */
+.home-title {
+  font-size: 2rem;
+  font-weight: 700;
+  opacity: 0;
+  animation: fadeUp 1s ease forwards 0.3s;
+}
+
+/* Descripción */
+.home-descripcion {
+  margin-top: 0.6rem;
+  font-size: 1.1rem;
+  opacity: 0;
+  animation: fadeUp 1s ease forwards 0.6s;
+}
+
+/* ================================
+   PRODUCT SECTION
+================================ */
+.product-content {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.product-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* ================================
+   ANIMACIONES
+================================ */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (min-width: 600px) {
+  .home-title { font-size: 2.6rem; }
+  .home-descripcion { font-size: 1.25rem; }
+}
+
+@media (min-width: 1024px) {
+  .home-title { font-size: 3rem; }
+  .product-title { font-size: 2.2rem; }
+}

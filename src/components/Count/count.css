@@ -1,0 +1,42 @@
+/* ============================================
+   🔵 CONTENEDOR DEL COUNT (mobile first)
+   ============================================ */
+
+.count-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* Para que no se rompa en mobile */
+  width: 100%;
+  max-width: 180px;
+  margin-bottom: 1rem;
+}
+
+/* ============================================
+   📱 TABLETS
+   ============================================ */
+@media (min-width: 480px) {
+  .count-btns {
+    gap: 1rem;
+    max-width: 200px;
+  }
+
+  .count-value {
+    font-size: 1.4rem;
+  }
+}
+
+/* ============================================
+   💻 DESKTOP
+   ============================================ */
+@media (min-width: 768px) {
+  .count-btns {
+    gap: 1.2rem;
+    max-width: 220px;
+  }
+
+  .count-value {
+    font-size: 1.5rem;
+  }
+}

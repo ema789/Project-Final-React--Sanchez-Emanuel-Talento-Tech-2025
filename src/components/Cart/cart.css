@@ -1,0 +1,138 @@
+/* ===============================
+   🛒 CONTENEDOR PRINCIPAL DEL CARRITO
+================================*/
+.cart-container {
+  width: 100%;
+  min-height: calc(100vh - 70px); 
+  display: flex;
+  justify-content: center;align-items: center;
+  padding: 2rem 1rem;
+
+}
+
+.cart-content {
+  width: 100%;
+  max-width: 900px;
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.cart-subtitle {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* ===============================
+   🅾️ CARRITO VACÍO
+================================*/
+.cart-empty {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centra vertical */
+  align-items: center;     /* centra horizontal */
+  gap: 1rem;               /* separa el texto del botón */
+  text-align: center;
+}
+.cart-warning {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.btn-return {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+/* ===============================
+   🧾 LISTA DE PRODUCTOS
+================================*/
+.cart-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart-item {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 0.6rem;
+}
+
+.cart-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.cart-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.cart-price,
+.cart-count,
+.cart-total-count {
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+.cart-info button {
+  width: 130px;
+}
+
+/* ===============================
+   💰 TOTAL Y BOTONES FINALES
+================================*/
+.cart-shares {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+}
+
+.cart-total {
+  text-align: right;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Botones: COMPLETE / EMPTY */
+.cart-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* ===============================
+   📱 RESPONSIVE
+================================*/
+@media (max-width: 600px) {
+  .cart-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cart-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .cart-buttons {
+    flex-direction: column;
+  }
+}

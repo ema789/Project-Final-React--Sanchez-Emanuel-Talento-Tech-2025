@@ -1,0 +1,55 @@
+/* ===============================
+   🟦 CONTENEDOR GENERAL
+================================*/
+.container-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+}
+
+/* Para evitar que en pantallas muy grandes el contenido quede muy angosto */
+.container-wrapper > * {
+  max-width: 600px;
+  width: 100%;
+}
+
+/* ===============================
+   🟩 MODO MOBILE (teléfonos)
+================================*/
+@media (max-width: 480px) {
+  .container-wrapper {
+    padding: 1.2rem 0.8rem;
+  }
+
+  .container-wrapper > * {
+    max-width: 100%;
+  }
+}
+
+/* ===============================
+   🟧 TABLETS
+================================*/
+@media (max-width: 768px) {
+  .container-wrapper {
+    padding: 1.5rem 1rem;
+  }
+
+  .container-wrapper > * {
+    max-width: 90%;
+  }
+}
+
+/* ===============================
+   🟪 MONITORES GRANDES
+================================*/
+@media (min-width: 1400px) {
+  .container-wrapper {
+    padding: 3rem 2rem;
+  }
+
+  .container-wrapper > * {
+    max-width: 650px;
+  }
+}

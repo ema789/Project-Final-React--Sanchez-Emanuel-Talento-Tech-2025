@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  font-family: "Google Sans Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* 2. Eliminar efectos por defecto */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* 3. Imágenes y videos responsivos */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 4. Quitar decoraciones a enlaces */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 5. Formularios tipográficos */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}

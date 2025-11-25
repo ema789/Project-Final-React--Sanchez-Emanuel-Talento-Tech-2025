@@ -1,0 +1,84 @@
+/* =====================================================
+   📱 MOBILE FIRST — ADMIN PRODUCTS
+===================================================== */
+
+.adminProd-wrapper{
+  margin-top: 6rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.admin-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
+/* ---------- Contenedor del formulario ---------- */
+.admin-form-container {
+  width: 100%;
+  max-width: 600px;
+
+  /* Estilo de tarjeta */
+  background: #fff;
+  padding: 1.8rem;
+  border-radius: 1rem;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.10);
+
+  /* margen con lista */
+  margin-bottom: 1.5rem;
+
+  animation: fadeIn 0.25s ease-in-out;
+}
+
+/* Animación suave */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.admin-list {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+
+/* =====================================================
+   🖥️ RESPONSIVE (tablets)
+===================================================== */
+@media (min-width: 600px) {
+  .admin-title {
+    font-size: 2rem;
+  }
+  .adminProd-wrapper {
+    padding: 1.2rem;
+  }
+
+
+  .admin-form-container {
+    padding: 1.2rem;
+  }
+}
+
+/* =====================================================
+   🖥️💻 RESPONSIVE (desktop)
+===================================================== */
+@media (min-width: 900px) {
+  .admin-products-wrapper {
+    max-width: 1100px;
+  }
+
+  .admin-title {
+    font-size: 2.2rem;
+  }
+
+  .admin-form-container {
+    padding: 2rem;
+  }
+}

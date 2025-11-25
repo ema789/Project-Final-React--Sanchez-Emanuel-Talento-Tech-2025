@@ -1,0 +1,24 @@
+.footer {
+  width: 100%;
+  background-color: #111;
+  padding: 1.2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+}
+
+.footer__content {
+  text-align: center;
+}
+
+.footer__text {
+  color: #ddd;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+.footer__text span {
+  color: #4dabf7;
+  font-weight: 600;
+}

@@ -1,0 +1,160 @@
+/* ===============================
+   🔵 BASE PARA TODOS LOS BOTONES
+================================*/
+.btn {
+  padding: 0.65rem 1.2rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.25s ease;
+}
+
+/* Estado disabled */
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+/* ===============================
+   🟦 AGREGAR (Add)
+================================*/
+.btn-add {
+  background-color: #1e90ff;  /* azul */
+  color: #fff;
+}
+
+.btn-add:hover:not(:disabled) {
+  background-color: #0b6fc7;
+  transform: translateY(-2px);
+}
+
+
+/* ===============================
+   🟨 EDITAR (Edit)
+================================*/
+.btn-edit {
+  background-color: #f0ad4e; /* naranja */
+  color: #212529;
+}
+
+.btn-edit:hover:not(:disabled) {
+  background-color: #d99034;
+  transform: translateY(-2px);
+}
+
+
+/* ===============================
+   🟥 ELIMINAR (Delete)
+================================*/
+.btn-delete {
+  background-color: #e63946; /* rojo */
+  color: #fff;
+}
+
+.btn-delete:hover:not(:disabled) {
+  background-color: #c71c2b;
+  transform: translateY(-2px);
+}
+
+
+/* ===============================
+   🟩 RETURN / VOLVER (Return)
+================================*/
+.btn-return {
+  background-color: #2ecc71; /* verde suave */
+  color: #fff;
+}
+
+.btn-return:hover:not(:disabled) {
+  background-color: #27ae60;
+  transform: translateY(-2px);
+}
+
+
+/* ===============================
+   🛒 BOTÓN CARRITO (Opcional)
+================================*/
+.btn-cart {
+  background-color: #ff9f1c; /* naranja suave */
+  color: #fff;
+}
+
+.btn-cart:hover:not(:disabled) {
+  background-color: #e38714;
+  transform: translateY(-2px);
+}
+
+
+/* =======================================================
+   🔵 BOTONES PEQUEÑOS DEL CONTADOR (+ y -)
+   ======================================================= */
+
+.btn-count {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+
+  font-size: 1.2rem;
+  font-weight: bold;
+
+  border: none;
+  border-radius: 6px;
+
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+/* Botón restar (−) */
+.btn-count-sub {
+  background-color: #ff6b6b; /* rojo suave */
+  color: #fff;
+}
+
+.btn-count-sub:hover:not(:disabled) {
+  background-color: #d9534f;
+  transform: translateY(-2px);
+}
+
+/* Botón sumar (+) */
+.btn-count-add {
+  background-color: #4dabf7; /* celeste */
+  color: #fff;
+}
+
+.btn-count-add:hover:not(:disabled) {
+  background-color: #1c7ed6;
+  transform: translateY(-2px);
+}
+
+/* Disabled */
+.btn-count:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Número entre los botones */
+.count-value {
+  min-width: 30px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Contenedor */
+.count-btns {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}

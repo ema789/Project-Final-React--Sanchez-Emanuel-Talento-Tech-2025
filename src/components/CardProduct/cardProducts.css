@@ -1,0 +1,189 @@
+/* ============================================================
+   📱 MOBILE FIRST — HOME GRID
+============================================================ */
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.4rem;
+  padding: 1.2rem;
+}
+
+/* Modo detalle → centrado */
+.detail-mode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1rem;
+}
+
+
+/* ============================================================
+   🟩 CARD BASE
+============================================================ */
+.product-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.02);
+}
+
+/* Card en modo detalle */
+.detail {
+  max-width: 550px;
+  width: 100%;
+  cursor: default;
+  transform: none !important;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.18);
+}
+
+
+/* ============================================================
+   🖼️ IMAGEN HOME (recortada)
+============================================================ */
+.product--content__img {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* 🔥 HOME → siempre recorta */
+  transition: transform 0.25s ease;
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.06);
+}
+
+
+/* ============================================================
+   🖼️ IMAGEN DETALLE (sin recorte)
+============================================================ */
+.detail .product--content__img {
+  height: auto;
+  background: #f2f2f2;
+  padding: 1rem;
+}
+
+.detail .product-img {
+  height: 380px;
+  object-fit: contain;   /* 🔥 DETALLE → NO se recorta */
+  transform: none !important;
+}
+
+
+/* ============================================================
+   ℹ️ INFO DEL PRODUCTO
+============================================================ */
+.card-info {
+  text-align: center;
+  padding: 1rem;
+}
+
+.productCard-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.productCard-price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #d62041;
+  margin-bottom: 0.3rem;
+}
+
+.productCard-descripction {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+
+/* ============================================================
+   🛒 BOTONES CLIENTE (mobile-first)
+============================================================ */
+
+
+.btn-client {
+  display: flex ;
+  flex-direction: row ; 
+  width: 100%;
+  padding: 1rem 0;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem; /* opcional: separación entre botones */
+  
+}
+
+
+
+
+/* ============================================================
+   🛠 ADMIN BUTTONS
+============================================================ */
+.btn-admin {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: center;
+}
+
+/* ===============================
+   🔵 CONTENEDOR DE BOTONES
+================================*/
+.btns-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem; /* separa todo de forma uniforme */
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* ============================================================
+   📟 TABLET — 600px
+============================================================ */
+@media (min-width: 600px) {
+
+  .product--content__img {
+    height: 240px;
+  }
+
+  .btn-client {
+    flex-direction: row; /* 🔥 se alinean en fila */
+    justify-content: center;
+  }
+
+  .product-card.detail .product-img {
+    height: 420px;
+  }
+}
+
+
+/* ============================================================
+   🖥 DESKTOP — 900px
+============================================================ */
+@media (min-width: 900px) {
+
+  .products-container {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    padding: 2rem;
+    gap: 1.8rem;
+  }
+
+  .product--content__img {
+    height: 260px;
+  }
+
+  .product-card.detail .product-img {
+    height: 450px;
+  }
+}

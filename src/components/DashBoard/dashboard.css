@@ -1,0 +1,139 @@
+/* === CONTENEDOR PRINCIPAL === */
+.dashboard-wrapper {
+  min-height: calc(100vh - 80px); /* deja espacio según tu navbar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  
+}
+
+/* === CAJA INTERNA === */
+.dashboard-container {
+  background: #ffffff;
+  padding: 2.2rem;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.10);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+   margin-top: 1rem;
+  animation: fadeIn 0.4s ease;
+}
+
+/* === ANIMACIÓN === */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* === TITULOS === */
+.dashboard-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.dashboard-subtitle {
+  font-size: 1.4rem;
+  margin: 1.5rem 0;
+  color: #444;
+  text-align: center;
+}
+
+.dashboard-welcome {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+/* === MENSAJES ESTADO === */
+.dashboard-loading {
+  color: #007bff;
+  font-weight: 500;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.error {
+  color: #d9534f;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* ===============================
+   👨‍💼 SOLO PARA ADMIN
+================================*/
+.admin-container {
+  margin-bottom: 2rem;
+}
+
+.dashboard-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+
+/* ============================================================
+   📱 BREAKPOINTS RESPONSIVE
+=============================================================== */
+
+/* === Tablets (>= 480px) === */
+@media (min-width: 480px) {
+  .dashboard-container {
+    padding: 2rem;
+  }
+
+  .dashboard-title {
+    font-size: 2.1rem;
+  }
+
+  .dashboard-welcome {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .dashboard-container {
+    padding: 1.6rem;
+  }
+
+  .dashboard-title {
+    font-size: 1.7rem;
+  }
+}
+
+/* === Tablets grandes / iPad (>= 768px) === */
+@media (min-width: 768px) {
+  .dashboard-wrapper {
+    padding: 3rem;
+  }
+
+  .dashboard-container {
+    padding: 2.4rem;
+  }
+
+  .dashboard-title {
+    font-size: 2.3rem;
+  }
+
+  .dashboard-subtitle {
+    font-size: 1.3rem;
+  }
+}
+
+/* === Escritorios (>= 1024px) === */
+@media (min-width: 1024px) {
+  .dashboard-container {
+    padding: 3rem;
+    max-width: 700px;
+  }
+
+  .btn-delete {
+    width: auto; /* no ocupa todo el ancho en desktop */
+    padding: 0.8rem 1.5rem;
+  }
+}
